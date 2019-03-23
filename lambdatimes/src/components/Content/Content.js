@@ -40,7 +40,7 @@ export default class Content extends Component {
     */ const filtered = this.state.cards.filter(
       card => {
         if (card.tab.includes(this.state.selected)) {
-          this.setState({ cards: card });
+          return card;
         }
       }
     );
@@ -49,12 +49,12 @@ export default class Content extends Component {
     if (this.state.selected === "all") {
       return this.state.cards;
     } else {
-      return this.state.cards;
+      return filtered;
     }
   };
 
   render() {
-    // console.log(this.state.cards);
+    console.log(this.state.cards);
     return (
       <div className="content-container">
         {/* 
