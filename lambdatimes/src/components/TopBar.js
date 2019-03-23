@@ -14,7 +14,7 @@ const TopBarDiv = styled.div`
   height: 44px;
   background-color: #333;
 `;
-const ContainerDiv = styled.div`
+const ContainerDiv = styled(TopBarDiv)`
   width: 100%;
   display: flex;
   justify-content: none;
