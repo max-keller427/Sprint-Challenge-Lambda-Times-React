@@ -40,19 +40,21 @@ export default class Content extends Component {
     */ const filtered = this.state.cards.filter(
       card => {
         if (card.tab.includes(this.state.selected)) {
-          return filtered;
+          this.setState({ cards: card });
         }
       }
     );
+    console.log("filtered");
+    console.log(filtered);
     if (this.state.selected === "all") {
       return this.state.cards;
     } else {
-      return filtered;
+      return this.state.cards;
     }
   };
 
   render() {
-    console.log(this.state.cards);
+    // console.log(this.state.cards);
     return (
       <div className="content-container">
         {/* 
