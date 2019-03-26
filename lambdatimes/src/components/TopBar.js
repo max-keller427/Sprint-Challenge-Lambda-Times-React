@@ -14,6 +14,7 @@ const TopBarDiv = styled.div`
   height: 44px;
   background-color: #333;
 `;
+
 const ContainerDiv = styled(TopBarDiv)`
   width: 100%;
   display: flex;
@@ -33,6 +34,7 @@ const ContainerLeft = styled.div`
   flex: 1;
   font-size: 11px;
 `;
+
 const ContainerLeftSpan = styled.span`
   margin-left: 10px;
 `
@@ -54,6 +56,7 @@ const ContainerRight = styled.div`
   font-size: 11px;
   font-weight: bold;
 `;
+
 const ContainerRightSpan = styled.span`
   margin-right: 10px;
 `
