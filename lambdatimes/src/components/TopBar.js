@@ -33,9 +33,12 @@ const ContainerLeft = styled.div`
   flex: 1;
   font-size: 11px;
 `;
+const ContainerLeftSpan = styled.span`
+  margin-left: 10px;
+`
 const ContainerCenter = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
   flex: 3;
@@ -51,13 +54,16 @@ const ContainerRight = styled.div`
   font-size: 11px;
   font-weight: bold;
 `;
+const ContainerRightSpan = styled.span`
+  margin-right: 10px;
+`
 const TopBar = () => {
   return (
     <TopBarDiv>
       <ContainerDiv>
         <ContainerLeft>
-          <span>TOPICS</span>
-          <span>SEARCH</span>
+          <ContainerLeftSpan>TOPICS</ContainerLeftSpan>
+          <ContainerLeftSpan>SEARCH</ContainerLeftSpan>
         </ContainerLeft>
         <ContainerCenter>
           <span>GENERAL</span>
@@ -67,7 +73,7 @@ const TopBar = () => {
           <span>ANNOUNCEMENTS</span>
         </ContainerCenter>
         <ContainerRight>
-          <span>LOG IN</span>
+          <ContainerRightSpan>LOG IN</ContainerRightSpan>
         </ContainerRight>
       </ContainerDiv>
     </TopBarDiv>
