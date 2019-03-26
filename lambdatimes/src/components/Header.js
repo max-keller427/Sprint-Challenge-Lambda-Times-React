@@ -10,7 +10,7 @@ const HeaderDiv = styled.div`
   flex-direction: row;
   background-color: #fff;
   border-bottom: 1px solid lightgrey;
-  width: 100%;
+  width: 93.6%;
   height: 120px;
   margin-top: 44px;
   padding-bottom: 15px;
@@ -21,6 +21,7 @@ const DateSpan = styled.span`
   font-size: 11px;
   font-weight: bold;
   letter-spacing: 1px;
+  margin-left: 25px;
 `;
 
 const HeaderH1 = styled.h1`
